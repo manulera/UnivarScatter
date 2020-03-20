@@ -1,4 +1,4 @@
-#Univarscatter
+# Univarscatter
 
 Draw an **univariate scatter plot** out of a nx2 table with a
 categorical/string and a numerical variable, or out of a
