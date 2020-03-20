@@ -51,5 +51,22 @@ A useful function to create the input of the function from columns of different 
 
 All your feedback is welcome to improve this function
 
+## Publications using Univarscatter
+
+Here are some publications that use `UnivarScatter`. If you know of more please let me know!
+
+Bailles, A., Collinet, C., Philippe, J. M., Lenne, P. F., Munro, E., & Lecuit, T. (2019). Genetic induction and mechanochemical propagation of a morphogenetic wave. Nature, 572(7770), 467–473. [https://doi.org/10.1038/s41586-019-1492-9](https://doi.org/10.1038/s41586-019-1492-9
+)
+
+Rozenfeld, E., Lerner, H., & Parnas, M. (2019). Muscarinic Modulation of Antennal Lobe GABAergic Local Neurons Shapes Odor Coding and Behavior. Cell Reports, 29(10), 3253–3265.e4. [https://doi.org/10.1016/j.celrep.2019.10.125](https://doi.org/10.1016/j.celrep.2019.10.125)
+
+Thomas, C. I., Keine, C., Okayama, S., Satterfield, R., Musgrove, M., Guerrero-Given, D., … Young, S. M. (2019). Presynaptic mitochondria volume and abundance increase during development of a high-fidelity synapse. Journal of Neuroscience, 39(41), 7994–8012. [https://doi.org/10.1523/JNEUROSCI.0363-19.2019](https://doi.org/10.1523/JNEUROSCI.0363-19.2019)
+
+Taylor, P. N., Sinha, N., Wang, Y., Vos, S. B., de Tisi, J., Miserocchi, A., … Duncan, J. S. (2018). The impact of epilepsy surgery on the structural connectome and its relation to outcome. NeuroImage: Clinical, 18(January), 202–214. [https://doi.org/10.1016/j.nicl.2018.01.028](https://doi.org/10.1016/j.nicl.2018.01.028)
+
+Sinha, N., Wang, Y., Dauwels, J., Kaiser, M., Thesen, T., Forsyth, R., & Taylor, P. N. (2019). Computer modelling of connectivity change suggests epileptogenesis mechanisms in idiopathic generalised epilepsy. NeuroImage: Clinical, 21(December 2018), 101655. [https://doi.org/10.1016/j.nicl.2019.101655](https://doi.org/10.1016/j.nicl.2019.101655)
+
+Thomas Hannich, J., Mellal, D., Feng, S., Zumbuehl, A., & Riezman, H. (2017). Structure and conserved function of iso-branched sphingoid bases from the nematode: Caenorhabditis elegans. Chemical Science, 8(5), 3676–3686. [https://doi.org/10.1039/c6sc04831e](https://doi.org/10.1039/c6sc04831e)
+
 ## Similar functions
 In Mathworks I came across a function that does something very similar to this, `plotSpread`([link](http://www.mathworks.com/matlabcentral/fileexchange/37105-plot-spread-points--beeswarm-plot-))
