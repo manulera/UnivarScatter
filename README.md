@@ -3,7 +3,7 @@
 Draw an **univariate scatter plot** out of a nx2 table with a
 categorical/string and a numerical variable, or out of a
 numerical array, with groups/categories corresponding
-to the columns of the numerical array. The function returns the `(x,y)` coordinates of the dots, so you can use them for custom plotting.
+to the columns of the numerical array. The function returns the `(x,y)` coordinates of the dots, so you can use them for custom plotting. If you use this function in a public webpage or publication, I encourage you to share the reference with me so that I include it in the publications section.
 
 This kind of graph is very popular in biochemistry/biology
 papers.
