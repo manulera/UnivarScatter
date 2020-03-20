@@ -1,6 +1,6 @@
 # Examples
 
-Some examples shared by users of `UnivarScatter`
+You can find a handful of examples in the file `UnivarScatterExamples.m` . Here there are some other examples shared by users of `UnivarScatter`.
 
 ## Example 1: Rozenfeld et al. 2019
 
