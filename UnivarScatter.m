@@ -205,7 +205,7 @@ else
 end
 end
 
-Ind=strmatch('Whiskers',stringVars);
+Ind=strcmp(stringVars,'Whiskers');
 if ~isempty(Ind)
     %Check that Whiskers is a string with a valid value
     if ischar(valueVars{Ind}) && any([strcmp('box',valueVars{Ind}),strcmp('none',valueVars{Ind}),strcmp('lines',valueVars{Ind})]) 
@@ -596,18 +596,18 @@ FigHandles(i)=scatter(xValues,yValues,PointSize,PointStyle,'MarkerEdgeColor', Ma
 if strcmp(Whiskers,'lines')
     %plot the mean line
     yMean=mean(yValues);
-    plot([i-Width/WhiskersWidthRatio i+Width/WhiskersWidthRatio],[yMean yMean],'Color',MeanColor(MeanIndex),'LineWidth',1.5)
+    plot([i-Width/WhiskersWidthRatio i+Width/WhiskersWidthRatio],[yMean yMean],'Color',MeanColor(MeanIndex),'LineWidth',3)
     
     %plot the sd 
     yStd=std(yValues);
-    plot([i-Width/WhiskersWidthRatio*0.5 i+Width/WhiskersWidthRatio*0.5],[yMean+yStd yMean+yStd],'Color',StdColor(StdIndex,:),'LineWidth',1.5)
-    plot([i-Width/WhiskersWidthRatio*0.5 i+Width/WhiskersWidthRatio*0.5],[yMean-yStd yMean-yStd],'Color',StdColor(StdIndex,:),'LineWidth',1.5)
+    plot([i-Width/WhiskersWidthRatio*0.5 i+Width/WhiskersWidthRatio*0.5],[yMean+yStd yMean+yStd],'Color',StdColor(StdIndex,:),'LineWidth',3)
+    plot([i-Width/WhiskersWidthRatio*0.5 i+Width/WhiskersWidthRatio*0.5],[yMean-yStd yMean-yStd],'Color',StdColor(StdIndex,:),'LineWidth',3)
     plot([i i],[yMean-yStd yMean+yStd],'Color',StdColor(StdIndex,:))
     %plot the conf. interval of the mean
     ySem=yStd/sqrt(size(yValues,1));
     yCI=ySem*1.96;
-    plot([i-Width/WhiskersWidthRatio*0.7 i+Width/WhiskersWidthRatio*0.7],[yMean+yCI yMean+yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',1.5)
-    plot([i-Width/WhiskersWidthRatio*0.7 i+Width/WhiskersWidthRatio*0.7],[yMean-yCI yMean-yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',1.5)
+    plot([i-Width/WhiskersWidthRatio*0.7 i+Width/WhiskersWidthRatio*0.7],[yMean+yCI yMean+yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',3)
+    plot([i-Width/WhiskersWidthRatio*0.7 i+Width/WhiskersWidthRatio*0.7],[yMean-yCI yMean-yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',3)
     plot([i i],[yMean-yCI yMean+yCI],'Color',SEMColor(SEMIndex,:))
 
 end
