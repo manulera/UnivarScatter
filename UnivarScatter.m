@@ -206,7 +206,7 @@ end
 end
 
 Ind=strcmp(stringVars,'Whiskers');
-if ~isempty(Ind)
+if any(Ind)
     %Check that Whiskers is a string with a valid value
     if ischar(valueVars{Ind}) && any([strcmp('box',valueVars{Ind}),strcmp('none',valueVars{Ind}),strcmp('lines',valueVars{Ind})]) 
         Whiskers=valueVars{Ind};
