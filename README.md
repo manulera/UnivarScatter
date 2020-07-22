@@ -72,6 +72,10 @@ Chromosome segregation is driven by joint microtubule sliding action of kinesins
 Kruno Vukušić, Renata Buđa, Ivana Ponjavić, Patrik Risteski, Iva M. Tolić
 bioRxiv 863381; doi: [https://doi.org/10.1101/863381](https://doi.org/10.1039/c6sc04831e)
 
+Coevolution of structural variation and optimization in sound systems of human language
+Meng-Han Zhang, Tao Gong
+bioRxiv 346965; doi: [https://doi.org/10.1101/346965](https://doi.org/10.1101/346965)
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
