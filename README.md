@@ -68,6 +68,10 @@ Sinha, N., Wang, Y., Dauwels, J., Kaiser, M., Thesen, T., Forsyth, R., & Taylor,
 
 Thomas Hannich, J., Mellal, D., Feng, S., Zumbuehl, A., & Riezman, H. (2017). Structure and conserved function of iso-branched sphingoid bases from the nematode: Caenorhabditis elegans. Chemical Science, 8(5), 3676–3686. [https://doi.org/10.1039/c6sc04831e](https://doi.org/10.1039/c6sc04831e)
 
+Chromosome segregation is driven by joint microtubule sliding action of kinesins KIF4A and EG5
+Kruno Vukušić, Renata Buđa, Ivana Ponjavić, Patrik Risteski, Iva M. Tolić
+bioRxiv 863381; doi: [https://doi.org/10.1101/863381](https://doi.org/10.1039/c6sc04831e)
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
