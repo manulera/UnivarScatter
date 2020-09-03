@@ -29,7 +29,7 @@ function [  ] = writeMeanNSem( y_values,shift,x_position,text_varargin,isbottom 
         text_value = sprintf('%.2f \\pm %.2f',all_mean(i),all_95CI(i));
         text(x_text(i),y_text(i),text_value,'HorizontalAlignment','Center',text_varargin{:});
 
-        
+       [x_text(i),y_text(i)] 
     end
     
 end
