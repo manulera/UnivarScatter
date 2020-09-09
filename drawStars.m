@@ -23,7 +23,7 @@ function [  ] = drawStars( y_values,p_values,thresh,shift,x_position,text_vararg
         for j = 1:numel(thresh)
             if p_values(i)<thresh(j)
                 stars = [stars '*'];
-                stars = sprintf('p<%.3f',thresh(j));
+                stars = sprintf('p<%.4f',thresh(j));
             end
         end
         if ~isempty(stars)
