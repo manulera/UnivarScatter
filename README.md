@@ -78,6 +78,10 @@ bioRxiv 346965; doi: [https://doi.org/10.1101/346965](https://doi.org/10.1101/34
 
 Wang, Y., Sinha, N., Schroeder, G. M., Ramaraju, S., McEvoy, A. W., Miserocchi, A., … Taylor, P. N. (2020). Interictal intracranial electroencephalography for predicting surgical success: The importance of space and time. Epilepsia, 61(7), 1417–1426. https://doi.org/10.1111/epi.16580
 
+Manenica, M., Koprivec, I., Štimac, V., Simunić, J., & Tolić, I. M. (2020). Augmin regulates kinetochore tension and spatial arrangement of spindle microtubules by nucleating bridging fibers. BioRxiv, 2020.09.10.291740. https://doi.org/10.1101/2020.09.10.291740
+
+Taylor, P. N., Moreira da Silva, N., Blamire, A., Wang, Y., & Forsyth, R. (2020). Early deviation from normal structural connectivity: A novel intrinsic severity score for mild TBI. Neurology, 94(10), e1021–e1026. https://doi.org/10.1212/WNL.0000000000008902
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
