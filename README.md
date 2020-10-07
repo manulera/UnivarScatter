@@ -76,6 +76,8 @@ Coevolution of structural variation and optimization in sound systems of human l
 Meng-Han Zhang, Tao Gong
 bioRxiv 346965; doi: [https://doi.org/10.1101/346965](https://doi.org/10.1101/346965)
 
+Wang, Y., Sinha, N., Schroeder, G. M., Ramaraju, S., McEvoy, A. W., Miserocchi, A., … Taylor, P. N. (2020). Interictal intracranial electroencephalography for predicting surgical success: The importance of space and time. Epilepsia, 61(7), 1417–1426. https://doi.org/10.1111/epi.16580
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
