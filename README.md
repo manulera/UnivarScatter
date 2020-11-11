@@ -70,7 +70,7 @@ Thomas Hannich, J., Mellal, D., Feng, S., Zumbuehl, A., & Riezman, H. (2017). St
 
 Chromosome segregation is driven by joint microtubule sliding action of kinesins KIF4A and EG5
 Kruno Vukušić, Renata Buđa, Ivana Ponjavić, Patrik Risteski, Iva M. Tolić
-bioRxiv 863381; doi: [https://doi.org/10.1101/863381](https://doi.org/10.1039/c6sc04831e)
+bioRxiv 863381; doi: [https://doi.org/10.1101/863381](https://doi.org/10.1101/863381)
 
 Coevolution of structural variation and optimization in sound systems of human language
 Meng-Han Zhang, Tao Gong
