@@ -55,7 +55,7 @@ All your feedback is welcome to improve this function
 
 Here are some publications that use `UnivarScatter`. If you know of more please let me know!
 
-Efremov, A., Grishchuk, E. L., McIntosh, J. R., & Ataullakhanov, F. I. (2007). In search of an optimal ring to couple microtubule depolymerization to processive chromosome motions. Proceedings of the National Academy of Sciences of the United States of America, 104(48), 19017–19022. https://doi.org/10.1073/pnas.0709524104
+Bürgi, J., Abrami, L., Castanon, I., Abriata, L. A., Kunz, B., Yan, S. E., … van der Goot, F. G. (2020). Ligand Binding to the Collagen VI Receptor Triggers a Talin-to-RhoA Switch that Regulates Receptor Endocytosis. Developmental Cell, 53(4), 418-430.e4. https://doi.org/10.1016/j.devcel.2020.04.015
 
 Bailles, A., Collinet, C., Philippe, J. M., Lenne, P. F., Munro, E., & Lecuit, T. (2019). Genetic induction and mechanochemical propagation of a morphogenetic wave. Nature, 572(7770), 467–473. [https://doi.org/10.1038/s41586-019-1492-9](https://doi.org/10.1038/s41586-019-1492-9
 )
