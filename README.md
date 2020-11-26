@@ -84,6 +84,8 @@ Manenica, M., Koprivec, I., Štimac, V., Simunić, J., & Tolić, I. M. (2020). A
 
 Taylor, P. N., Moreira da Silva, N., Blamire, A., Wang, Y., & Forsyth, R. (2020). Early deviation from normal structural connectivity: A novel intrinsic severity score for mild TBI. Neurology, 94(10), e1021–e1026. https://doi.org/10.1212/WNL.0000000000008902
 
+Israel, S., Rozenfeld, E., Weber, D., Huetteroth, W., & Parnas, M. (2020). Two Parallel Pathways Mediate Olfactory-Driven Backward Locomotion. BioRxiv, 2020.11.23.393819. https://doi.org/10.1101/2020.11.23.393819
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
