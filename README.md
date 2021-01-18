@@ -88,6 +88,8 @@ Israel, S., Rozenfeld, E., Weber, D., Huetteroth, W., & Parnas, M. (2020). Two P
 
 Trupinić, M., Ponjavić, I., Kokanović, B., Barišić, I., Šegvić, S., Ivec, A., & Tolić, I. M. (2020). Twist of the mitotic spindle culminates at anaphase onset and depends on microtubule-associated proteins along with external forces. BioRxiv, 2020.12.27.424486. https://doi.org/10.1101/2020.12.27.424486
 
+Popescu, T., Widdess, R., & Rohrmeier, M. (2020, December 20). Western listeners detect boundary hierarchy in Indian music: a segmentation study (Popescu et al. 2020, Scientific Reports). https://doi.org/10.31234/osf.io/q9f7e
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
