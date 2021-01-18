@@ -86,6 +86,8 @@ Taylor, P. N., Moreira da Silva, N., Blamire, A., Wang, Y., & Forsyth, R. (2020)
 
 Israel, S., Rozenfeld, E., Weber, D., Huetteroth, W., & Parnas, M. (2020). Two Parallel Pathways Mediate Olfactory-Driven Backward Locomotion. BioRxiv, 2020.11.23.393819. https://doi.org/10.1101/2020.11.23.393819
 
+Trupinić, M., Ponjavić, I., Kokanović, B., Barišić, I., Šegvić, S., Ivec, A., & Tolić, I. M. (2020). Twist of the mitotic spindle culminates at anaphase onset and depends on microtubule-associated proteins along with external forces. BioRxiv, 2020.12.27.424486. https://doi.org/10.1101/2020.12.27.424486
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
