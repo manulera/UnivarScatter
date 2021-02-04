@@ -90,6 +90,8 @@ Trupinić, M., Ponjavić, I., Kokanović, B., Barišić, I., Šegvić, S., Ivec,
 
 Popescu, T., Widdess, R., & Rohrmeier, M. (2020, December 20). Western listeners detect boundary hierarchy in Indian music: a segmentation study (Popescu et al. 2020, Scientific Reports). https://doi.org/10.31234/osf.io/q9f7e
 
+Goodarzi, S., Prunet, A., Rossetti, F., Tillement, O., Porcel, E., & Lacombe, S. (2021). Quantifying nanotherapeutics penetration using hydrogel based microsystem as a new 3D in-vitro platform, 1–29. https://doi.org/10.1101/2021.01.17.427020
+
 ## Examples
 
 You can find a handful of examples in the file `UnivarScatterExamples.m` . In the folder `examples` there are some other examples shared by users of `UnivarScatter`, see `examples/examples.md`.
