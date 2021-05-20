@@ -13,3 +13,10 @@ Combining a bar plot with the dots. See `Rozenfeld2019/Figure_4E.m`.
 When you have many values, it might be interesting to show the borders of dots in white. See `crowdedPlot`.
 
 <img src="crowdedPlot/plot.svg" width="400"/>
+
+## Example 3: Representing statistical significance
+
+You can use the function `drawStars`, included in the repository, or use it for inspiration.
+
+<img src="significance/plot1.svg" width="300"/>
+<img src="significance/plot2.svg" width="300"/>
