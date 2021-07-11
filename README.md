@@ -1,4 +1,4 @@
-# Univarscatter
+# Univarscatter [![View UnivarScatter on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://fr.mathworks.com/matlabcentral/fileexchange/54243-univarscatter)
 
 Draw an **univariate scatter plot** out of a nx2 table with a
 categorical/string and a numerical variable, or out of a
