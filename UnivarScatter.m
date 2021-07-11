@@ -150,9 +150,9 @@ function [xPositions, yPositions, Label, RangeCut, FigHandles] = UnivarScatter(d
 % version: <1.00> from 30/11/2015
 %          <1.10> from 07/03/2016 - FigHandles added, cla to clear plot added
 % 
-%       Manuel Lera Ramírez: manulera14@gmail.com
+%       Manuel Lera Ramï¿½rez: manulera14@gmail.com
 %
-%       Developed during Master Thesis Internship in Marcos González-Gaitán's Lab
+%       Developed during Master Thesis Internship in Marcos Gonzï¿½lez-Gaitï¿½n's Lab
 %       Departments of Biochemistry and Molecular Biology, Sciences II, 
 %       30 Quai Ernest-Ansermet, CH-1211 Geneva 4, Switzerland
 %--------------------------------------------------------------------------
@@ -310,6 +310,24 @@ else
    LineWidth=0.5;
 end
 
+Ind=strmatch('xCenters',stringVars);
+if ~isempty(Ind)
+    %Check that xPositions is a number
+    if isnumeric(valueVars{Ind})
+        if size(valueVars{Ind})==1
+            xCenters=valueVars{Ind}*ones(size(data,2),1);
+        elseif all(size(valueVars{Ind})== [size(data,2),1]) || all(size(valueVars{Ind}) == [1,size(data,2)])
+            xCenters=valueVars{Ind};
+        else
+            error(sprintf('wrong xCenters, it should be a number, or a column/row vector with length=size(data,2)'))
+        end
+    else
+        error(sprintf('wrong xCenters, it should be a number, or a column/row vector with length=size(data,2)'))
+    end
+else
+   xCenters=1:size(data,2);
+end
+
 
 %% Mixed Variables
 %Some of the following variables are the classic scatter personalizing tools,
@@ -410,7 +428,7 @@ if ~HoldWasOn
 end
 hold on
 
-FigHandles=nan(1,size(data,2));
+FigHandles=cell(1,size(data,2));
 xPositions=nan(size(data));
 yPositions=data;
 for i=1:size(data,2)
@@ -442,7 +460,7 @@ end
 % depending on how many points we had. Thats why the while loops that we
 % find afterwards change the x of each point, so they spread and do not
 % overlap.
-xValues=ones(size(yValues))*i;
+xValues=ones(size(yValues))*xCenters(i);
 
 %% Plotting the error bars and the standard deviation bars
 
@@ -467,18 +485,19 @@ else
 end
 
 %If we want boxes for the mean and std
-if strcmp(Whiskers,'box')
+if strcmp(Whiskers,'box') && numel(yValues)~=1
     
     yMean=mean(yValues);
     yStd=std(yValues);
     ySem=yStd/sqrt(size(yValues,1));
     yCI=ySem*1.96;
+    c = xCenters(i);
     %plot the standard deviation box
-    rectangle('Position',[i-Width/WhiskersWidthRatio,yMean-yStd,2*Width/WhiskersWidthRatio,2*yStd ],'FaceColor',StdColor(StdIndex,:),'EdgeColor', StdColor(StdIndex,:),'LineWidth',0.1);
+    rectangle('Position',[c-Width/WhiskersWidthRatio,yMean-yStd,2*Width/WhiskersWidthRatio,2*yStd ],'FaceColor',StdColor(StdIndex,:),'EdgeColor', StdColor(StdIndex,:),'LineWidth',0.1);
     %plot the mean+-SEM box
-    rectangle('Position',[i-Width/WhiskersWidthRatio,yMean-yCI,2*Width/WhiskersWidthRatio,2*yCI ],'FaceColor',SEMColor(SEMIndex,:),'EdgeColor', SEMColor(SEMIndex,:),'LineWidth',0.1);
+    rectangle('Position',[c-Width/WhiskersWidthRatio,yMean-yCI,2*Width/WhiskersWidthRatio,2*yCI ],'FaceColor',SEMColor(SEMIndex,:),'EdgeColor', SEMColor(SEMIndex,:),'LineWidth',0.1);
     %plot the mean line 
-    plot([i-Width/WhiskersWidthRatio i+Width/WhiskersWidthRatio],[yMean yMean],'Color',MeanColor(MeanIndex,:),'LineWidth',2)
+    plot([c-Width/WhiskersWidthRatio c+Width/WhiskersWidthRatio],[yMean yMean],'Color',MeanColor(MeanIndex,:),'LineWidth',2)
 
 end
 %% Changing the xValue of each point
@@ -527,7 +546,7 @@ while keep_going
         % xSubset is a column vector with all values equal to i, and as
         % long as the subset of the number of values in yValues that belong
         % to this particular group range
-        xSubset=ones(sum(subsetind),1)*i;
+        xSubset=ones(sum(subsetind),1)*xCenters(i);
         
         %oddie is a variable that indicates whether the number of points in
         %the group is odd or even, it's very important for the indexing
@@ -591,24 +610,26 @@ else
     FaceIndex=1;
 end
 
-FigHandles(i)=scatter(xValues,yValues,PointSize,PointStyle,'MarkerEdgeColor', MarkerEdgeColor(EdgeIndex,:),'MarkerFaceColor',MarkerFaceColor(FaceIndex,:),'LineWidth',LineWidth);
+FigHandles{i}=scatter(xValues,yValues,PointSize,PointStyle,'MarkerEdgeColor', MarkerEdgeColor(EdgeIndex,:),'MarkerFaceColor',MarkerFaceColor(FaceIndex,:),'LineWidth',LineWidth);
 %If we want lines to represent the SEM and the std
-if strcmp(Whiskers,'lines')
+if strcmp(Whiskers,'lines') && numel(yValues)>2
     %plot the mean line
     yMean=mean(yValues);
-    plot([i-Width/WhiskersWidthRatio i+Width/WhiskersWidthRatio],[yMean yMean],'Color',MeanColor(MeanIndex),'LineWidth',3)
+    c = xCenters(i);
+    
+    plot([c-Width/WhiskersWidthRatio c+Width/WhiskersWidthRatio],[yMean yMean],'Color',MeanColor(MeanIndex),'LineWidth',3)
     
     %plot the sd 
     yStd=std(yValues);
-    plot([i-Width/WhiskersWidthRatio*0.5 i+Width/WhiskersWidthRatio*0.5],[yMean+yStd yMean+yStd],'Color',StdColor(StdIndex,:),'LineWidth',3)
-    plot([i-Width/WhiskersWidthRatio*0.5 i+Width/WhiskersWidthRatio*0.5],[yMean-yStd yMean-yStd],'Color',StdColor(StdIndex,:),'LineWidth',3)
-    plot([i i],[yMean-yStd yMean+yStd],'Color',StdColor(StdIndex,:))
+    plot([c-Width/WhiskersWidthRatio*0.5 c+Width/WhiskersWidthRatio*0.5],[yMean+yStd yMean+yStd],'Color',StdColor(StdIndex,:),'LineWidth',3)
+    plot([c-Width/WhiskersWidthRatio*0.5 c+Width/WhiskersWidthRatio*0.5],[yMean-yStd yMean-yStd],'Color',StdColor(StdIndex,:),'LineWidth',3)
+    plot([c c],[yMean-yStd yMean+yStd],'Color',StdColor(StdIndex,:))
     %plot the conf. interval of the mean
     ySem=yStd/sqrt(size(yValues,1));
     yCI=ySem*1.96;
-    plot([i-Width/WhiskersWidthRatio*0.7 i+Width/WhiskersWidthRatio*0.7],[yMean+yCI yMean+yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',3)
-    plot([i-Width/WhiskersWidthRatio*0.7 i+Width/WhiskersWidthRatio*0.7],[yMean-yCI yMean-yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',3)
-    plot([i i],[yMean-yCI yMean+yCI],'Color',SEMColor(SEMIndex,:))
+    plot([c-Width/WhiskersWidthRatio*0.7 c+Width/WhiskersWidthRatio*0.7],[yMean+yCI yMean+yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',3)
+    plot([c-Width/WhiskersWidthRatio*0.7 c+Width/WhiskersWidthRatio*0.7],[yMean-yCI yMean-yCI],'Color',SEMColor(SEMIndex,:),'LineWidth',3)
+    plot([c c],[yMean-yCI yMean+yCI],'Color',SEMColor(SEMIndex,:))
 
 end
 

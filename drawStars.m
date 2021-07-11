@@ -40,8 +40,10 @@ function [  ] = drawStars( y_values,p_values,thresh,shift,x_position,show_stars,
         stars='';
         for j = 1:numel(thresh)
             if p_values(i)<thresh(j)
-                if show_stars
+                if show_stars == 1
                     stars = [stars '*'];
+                elseif show_stars == 2
+                    stars = sprintf('p=%.1E',p_values(i));
                 else
                     stars = sprintf('p<%.4f',thresh(j));
                 end
