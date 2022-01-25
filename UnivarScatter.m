@@ -512,6 +512,12 @@ range_val=norminv([0.05 0.95],mean(yValues),std(yValues));
 %range_val=quantile(yValues,[0.05 0.95]);
 cuts=abs(range_val(1)-range_val(2))/RangeCut(i);
 
+% If only two values, put them in the same group always (make the cut to
+% always include both values)
+if numel(yValues)==2
+    cuts=abs(diff(yValues))*2;
+end
+
 % In case one of the variables has equal values for all its points, the
 % norminv will return a nan, since std(yValues) will be 0, in that case we
 % arbitrarily give cuts the value of cuts=mean(yValues)/2, this value does not
@@ -519,6 +525,9 @@ cuts=abs(range_val(1)-range_val(2))/RangeCut(i);
 if isnan(cuts)
     cuts=mean(yValues)/2;
 end
+
+
+
 % The "seed" group contains the values which are in the range of the
 % mean+-1/2cuts. cutUp is the higher border of the interval. So we
 % take this value, and from it we move up and down in this two loops(steps is a variable 
