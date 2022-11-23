@@ -10,6 +10,10 @@ papers.
 
 <img src="example1.svg" width="400"/><img src="example2.svg" width="400"/>
 
+It allows for a lot customisation (see [examples](examples))
+
+<img src="examples/crowdedPlot/plot.svg" width="400"/>
+
 ## Basic usage
 ```matlab
 
